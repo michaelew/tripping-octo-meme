@@ -17,6 +17,4 @@ users = [
 ]
 
 for user in users:
-    for stuff in user.iteritems():
-        if not "5" in stuff[1]:
-            print stuff[1] + ' ' + '(' + stuff[0] + ')'
+    print "{0} ({1})".format(user['login'], user['type'])
