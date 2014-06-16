@@ -8,7 +8,7 @@ monthlyPaymentRate = sys.argv[2]
 
 def pay_minimum(balance, annualInterestRate, monthlyPaymentRate):
     months = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
-    monthlyInterestRate = (annualInterestRate) / 2.0
+    monthlyInterestRate = (annualInterestRate) / 12.0
     minimumMonthlyPayment = (monthlyPaymentRate) * (balance)
     monthlyUnpaidBalance = (balance) - (minimumMonthlyPayment)
     updatedBalanceEachMonth = (monthlyUnpaidBalance) + (monthlyInterestRate * monthlyUnpaidBalance)
